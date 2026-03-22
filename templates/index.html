@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spam Classifier</title>
+</head>
+
+<body>
+
+    <h2>Spam Classifier</h2>
+
+    <form method="POST">
+        <input type="text" name="message" placeholder="Enter message">
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+    <h3>Result: {{ result }}</h3>
+    <p>Message: {{ message }}</p>
+    {% endif %}
+
+</body>
+
+</html>
